@@ -1,7 +1,7 @@
 # PaintingFence-Algorithm
 Painting Fence Algorithm — Dynamic Programming & Brute Force (C++)
 
-Final team project for SWE212 - Algorithms Analysis and Design [FALL 2021]
+Final team project for SWE212 - Algorithms Analysis and Design [SPRING 2022]
 
 # About The Project
 The algorithm states that you are given a fence having some posts (some wooden pieces or some other pieces) and some colors. You have to find out the number of ways to paint the fence such that at most only 2 adjacent fences have the same color.
