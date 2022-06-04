@@ -2,9 +2,9 @@
 using namespace std;
 
 string s;
-int n;
 int ans;
-void permute(int idx) {
+
+void permute(int idx,int n) {
     if (idx == n) {
         int cnt = 0;
         for (int i = 0; i < n - 1; ++i) {
@@ -26,15 +26,16 @@ void permute(int idx) {
 
     for (char ch : {'A', 'B', 'C'}) {
         s[idx] = ch;
-        permute(idx + 1);
+        permute(idx + 1,n);
     }
 }
 
 
 int main() {
+    int n;
     cin >> n;
     s = "ABCD";
-    permute(0);
+    permute(0,n);
     cout << ans;
 
     return 0;
