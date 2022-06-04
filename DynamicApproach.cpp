@@ -23,5 +23,5 @@ int PaintFenceDynamic(int NumberOfPosts, int NumberOfColors)
 
 int main()
 {
-    cout << "* Output: " << PaintFenceDynamic(3, 2) << endl;
+    cout << "* Output: " << PaintFenceDynamic(2, 4) << endl;
 }
