@@ -32,7 +32,7 @@ void PaintFenceBF(int idx, int n)
     for (char ch : {'A', 'B', 'C'})
     {
         s[idx] = ch;
-        permute(idx + 1,n);
+        PaintFenceBF(idx + 1, n);
     }
 }
 
@@ -42,7 +42,7 @@ int main()
     int n;
     cin >> n;
     s = "ABCD";
-    permute(0,n);
+    PaintFenceBF(0, n);
     cout << ans;
 
     return 0;
