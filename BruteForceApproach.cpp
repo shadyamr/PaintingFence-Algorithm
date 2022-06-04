@@ -4,7 +4,8 @@ using namespace std;
 string s;
 int ans;
 
-void permute(int idx,int n) {
+void PaintFenceBF(int idx, int n)
+{
     if (idx == n) {
         int cnt = 0;
         for (int i = 0; i < n - 1; ++i) {
