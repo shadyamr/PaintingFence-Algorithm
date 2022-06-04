@@ -15,6 +15,7 @@ The algorithm states that you are given a fence having some posts (some wooden p
 * 5779ms
 * 4733ms
 * 5403ms
+* Average complexity = 5108 ms
 
 ## Team Algorithm for Brute Force Approach
 * 6553ms
@@ -24,6 +25,7 @@ The algorithm states that you are given a fence having some posts (some wooden p
 * 6578ms
 * 4882ms
 * 4991ms
+* Average complexity = 5798 ms
 
 ## Geeks4Geeks Algorithm for DP Approach
 * 5134ms
@@ -33,6 +35,7 @@ The algorithm states that you are given a fence having some posts (some wooden p
 * 6306ms
 * 5890ms
 * 5156ms
+* Average complexity = 5583 ms
 
 # Contributors
 <table>
