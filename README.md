@@ -6,6 +6,25 @@ Final team project for SWE212 - Algorithms Analysis and Design [SPRING 2022]
 # About The Project
 The algorithm states that you are given a fence having some posts (some wooden pieces or some other pieces) and some colors. You have to find out the number of ways to paint the fence such that at most only 2 adjacent fences have the same color.
 
+# Execution Time
+## TEAM'S ALGORITHM
+* 4724ms
+* 5011ms
+* 5295ms
+* 4815ms
+* 5779ms
+* 4733ms
+* 5403ms
+
+## Geeks4Geeks ALGORITHM
+* 5134ms
+* 6358ms
+* 4696ms
+* 5542ms
+* 6306ms
+* 5890ms
+* 5156ms
+
 # Contributors
 <table>
   <tr>
