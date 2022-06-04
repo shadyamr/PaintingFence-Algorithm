@@ -8,31 +8,37 @@ void PaintFenceBF(int idx, int n)
 {
     if (idx == n) {
         int cnt = 0;
-        for (int i = 0; i < n - 1; ++i) {
-            if (s[i] == s[i + 1]) {
+        for (int i = 0; i < n - 1; ++i)
+        {
+            if (s[i] == s[i + 1])
+            {
                 cnt++;
                 if (cnt > 1)
                     break;
             }
-            else {
+            else
+            {
                 cnt = 0;
             }
         }
-        if (cnt <= 1) {
+        if (cnt <= 1)
+        {
             cout << s << endl;
             ans++;
         }
         return;
     }
 
-    for (char ch : {'A', 'B', 'C'}) {
+    for (char ch : {'A', 'B', 'C'})
+    {
         s[idx] = ch;
         permute(idx + 1,n);
     }
 }
 
 
-int main() {
+int main()
+{
     int n;
     cin >> n;
     s = "ABCD";
