@@ -1,27 +1,48 @@
 #include <iostream>
 using namespace std;
 
-int PaintFenceDynamic(int NumberOfPosts, int NumberOfColors)
+string s;
+int ans;
+
+void PaintFenceBF(int idx, int n)
 {
-    if (NumberOfPosts == 0)
-    {
-        return 0;
+    if (idx == n) {
+        int cnt = 0;
+        for (int i = 0; i < n - 1; ++i)
+        {
+            if (s[i] == s[i + 1])
+            {
+                cnt++;
+                if (cnt > 1)
+                    break;
+            }
+            else
+            {
+                cnt = 0;
+            }
+        }
+        if (cnt <= 1)
+        {
+            cout << s << endl;
+            ans++;
+        }
+        return;
     }
-    if (NumberOfPosts == 1)
+
+    for (char ch : {'A', 'B', 'C'})
     {
-        return NumberOfPosts;
+        s[idx] = ch;
+        PaintFenceBF(idx + 1, n);
     }
-    int same = NumberOfColors, diff = NumberOfColors * (NumberOfColors - 1);
-    for (int i = 3; i <= NumberOfPosts; i++)
-    {
-        int PrevDiff = diff;
-        diff = (same + diff) * (NumberOfColors - 1);
-        same = PrevDiff * 1;
-    }
-    return same + diff;
 }
+
 
 int main()
 {
-    cout << "* Output: " << PaintFenceDynamic(4,3) << endl;
-}
+    int n;
+    cin >> n;
+    s = "ABCD";
+    PaintFenceBF(0, n);
+    cout << ans;
+
+    return 0;
